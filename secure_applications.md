@@ -354,7 +354,7 @@ Then, generate a self-signed certificate and key for it, which will be used to a
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/ssl-cert-snakeoil.key -out /etc/ssl/certs/ssl-cert-snakeoil.pem
 </pre>
 
-and answer the questions when prompted. You can invent a fictional "Organization Name" and "Organizational Unit Name" for your server, but for the "Common Name" question, use the name listed under "Hostname" in the GENI Portal for the "server" node. 
+and answer the questions when prompted. You can invent a fictional "Organization Name" and "Organizational Unit Name" for your server, but for the "Common Name" question, use the name listed under "Hostname" in the GENI or FABRIC or Cloudlab for the "server" node. 
 
 For example:
 
