@@ -379,9 +379,8 @@ sudo nano /etc/apache2/sites-available/default-ssl.conf
 
 After the `<VirtualHost _default_:443>` line, add a ServerName line with the hostname of the "server" host. Excluding comments, the config file will end up looking similar to the following:
 
-<pre>
-<IfModule mod_ssl.c>
-        <VirtualHost _default_:443>
+<pre><code>&lt;IfModule mod_ssl.c&gt;  
+        &lt;VirtualHost _default_:443&gt;
                 ServerName server.lab9-new.ch-geni-net.instageni.idre.ucla.edu
                 ServerAdmin webmaster@localhost
 
@@ -390,9 +389,9 @@ After the `<VirtualHost _default_:443>` line, add a ServerName line with the hos
                 SSLEngine on
                 SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
                 SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
-        </VirtualHost>
-</IfModule>
-</pre>
+        &lt;/VirtualHost&gt;
+&lt;/IfModule&gt;  
+</code></pre>
 
 (although there may be some additional lines not shown here.)
 
@@ -414,20 +413,19 @@ sudo nano /var/www/html/form.html
 
 and place the following HTML inside this file:
 
-<pre>
-<!DOCTYPE html>
-<html>
-  <body>
-    <form action="/done.html">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="John"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Doe"><br><br>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
-</html>
-</pre>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+  &lt;body&gt;
+    &lt;form action="/done.html"&gt;
+      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+      &lt;input type="text" id="fname" name="fname" value="John"&gt;&lt;br&gt;
+      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+      &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;  
+</code></pre>
 
 Save with Ctrl+O, then use Ctrl+X to quit `nano`.
 
@@ -441,14 +439,13 @@ sudo nano /var/www/html/done.html
 
 and place the following HTML inside this file:
 
-<pre>
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Done!</h1>
-  </body>
-</html>
-</pre>
+<pre><code>&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+  &lt;body&gt;
+    &lt;h1&gt;Done!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;  
+</code></pre>
 
 Save with Ctrl+O, then use Ctrl+X to quit `nano`.
 
