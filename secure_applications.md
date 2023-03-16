@@ -3,7 +3,7 @@
 The exercises in this experiment will focus on the *confidentiality* of network services - to what extent are services that offer remote login, file transfer, or web access, protected from disclosure to unauthorized individuals? In particular, we will consider confidentiality with respect to malicious users who might be eavesdropping on network traffic.
 
 You can run this experiment on GENI or on the new FABRIC testbed! Refer to the testbed-specific prerequisites listed below.
-<p><br></p>
+
 <div style="border-color:#FB8C00; border-style:solid; padding: 15px;">  
 <h4 style="color:#FB8C00;"> GENI-specific instructions: Prerequisites</h4>
 
@@ -15,6 +15,12 @@ To reproduce this experiment on GENI, you will need an account on the <a href="h
 To run this experiment on <a href="https://fabric-testbed.net/">FABRIC</a>, you should have a FABRIC account and be part of a FABRIC project. 
 </div>  
 <p><br></p>
+<div style="border-color:#5e8a90; border-style:solid; padding: 15px;">  
+<h4 style="color:#5e8a90;"> Cloudlab-specific instructions: Prerequisites</h4>
+
+To reproduce this experiment on Cloudlab, you will need an account on <a href="https://cloudlab.us/">Cloudlab</a>, you will need to have <a href="https://docs.cloudlab.us/users.html#%28part._join-project%29">joined a project</a>, and you will need to have <a href="https://docs.cloudlab.us/users.html#%28part._ssh-access%29">set up SSH access</a>.
+</div>  
+
 <ul>
 <li>Skip to <a href="#runmyexperiment">Run my experiment</a></li>
 </ul>
@@ -35,7 +41,7 @@ For this experiment, we will use the topology illustrated here, with IP addresse
 <img src="https://user-images.githubusercontent.com/73753025/224797673-933ec90a-00c9-418e-87c7-a66ed160bf41.png" alt="secure-applications-topology" />
 
 Follow the instructions for the testbed you are using (GENI or FABRIC) to reserve the resources and log in to each of the hosts in this experiment.
-<p><br></p>
+
 <div style="border-color:#FB8C00; border-style:solid; padding: 15px;">  
 <h4 style="color:#FB8C00;"> GENI-specific instructions: Reserve resources</h4>
 
@@ -63,6 +69,20 @@ git checkout secure_applications
 <p>When you have logged in to each node, continue to the <a href="#remote-login">Remote login</a> section.</p>  
 </div>  
 <p><br></p>
+<div style="border-color:#5e8a90; border-style:solid; padding: 15px;">  
+<h4 style="color:#5e8a90;"> Cloudlab-specific instructions: Reserve resources</h4>
+
+<p>To reserve these resources on Cloudlab, open this profile page: </p>
+
+<p><a href="https://www.cloudlab.us/p/nyunetworks/education?refspec=refs/heads/tcp_congestion_control">https://www.cloudlab.us/p/nyunetworks/education?refspec=refs/heads/tcp_congestion_control</a></p>
+
+<p>Click "next", then select the Cloudlab project that you are part of and a Cloudlab cluster with available resources. (This experiment is compatible with any of the Cloudlab clusters.) Then click "next", and "finish".</p>
+
+<p>Wait until all of the sources have turned green and have a small check mark in the top right corner of the "topology view" tab, indicating that they are fully configured and ready to log in. Then, click on "list view" to get SSH login details for the romeo, router, and server hosts. Use these details to SSH into each.</p>
+
+<p>When you have logged in to each node, continue to the <a href="#remote-login">Remote login</a> section.</p>
+
+</div>  
 
 ### Remote login
 
