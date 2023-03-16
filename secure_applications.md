@@ -1,4 +1,4 @@
-## Secure networked applications
+# Secure networked applications
 
 The exercises in this experiment will focus on the *confidentiality* of network services - to what extent are services that offer remote login, file transfer, or web access, protected from disclosure to unauthorized individuals? In particular, we will consider confidentiality with respect to malicious users who might be eavesdropping on network traffic.
 
@@ -25,7 +25,7 @@ To reproduce this experiment on Cloudlab, you will need an account on <a href="h
 <li>Skip to <a href="#runmyexperiment">Run my experiment</a></li>
 </ul>
 
-### Background
+## Background
 
 In today's digital age, protecting data privacy and security is crucial. With the increasing amount of data transmitted over computer networks, it is essential to understand the distinction between secure and non-secure applications. 
 
@@ -34,7 +34,7 @@ Secure applications typically use encryption techniques to encode data and prote
 
 Non-secure applications, on the other hand, are not designed with the same level of protection and can leave data vulnerable to interception or manipulation. Examples of non-secure applications include unencrypted email, file transfer protocols (FTP), HTTP and Telnet. These applications are often used for non-sensitive communication, but they can pose a risk when used to transmit confidential or sensitive information. 
 
-### Run my experiment
+## Run my experiment
 
 For this experiment, we will use the topology illustrated here, with IP addresses as noted on the diagram and a subnet mask of 255.255.255.0 on each interface: 
 
@@ -84,7 +84,7 @@ git checkout secure_applications
 
 </div>  
 
-### Remote login
+## Remote login
 
 In this exercise, we will compare `telnet` and `SSH`, two applications used for remote login to a host. 
 
@@ -240,7 +240,7 @@ Transfer both packet captures to your laptop with `scp`, and analyze with Wiresh
 
 **Lab report**: In the packet capture of the SSH experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. 
 
-### File transfer
+## File transfer
 
 In this exercise, we will compare FTP and SFTP, two applications used for file transfer to and from a remote host. SFTP tunnels FTP traffic over an SSH session.
 
@@ -358,7 +358,7 @@ Transfer both packet captures to your laptop with `scp`, and analyze with Wiresh
 **Lab report**: In the packet capture of the SFTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence. 
 
 
-### Web access
+## Web access
 
 In this exercise, we'll compare HTTP and HTTPS (HTTP over SSL/TLS).
 
