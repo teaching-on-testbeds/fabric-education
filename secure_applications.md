@@ -34,6 +34,8 @@ Secure applications typically use encryption techniques to encode data and prote
 
 Non-secure applications, on the other hand, are not designed with the same level of protection and can leave data vulnerable to interception or manipulation. Examples of non-secure applications include unencrypted email, file transfer protocols (FTP), HTTP and Telnet. These applications are often used for non-sensitive communication, but they can pose a risk when used to transmit confidential or sensitive information. 
 
+## Results
+
 ## Run my experiment
 
 For this experiment, we will use the topology illustrated here, with IP addresses as noted on the diagram and a subnet mask of 255.255.255.0 on each interface: 
@@ -84,7 +86,7 @@ git checkout secure_applications
 
 </div>  
 
-## Remote login
+### Remote login
 
 In this exercise, we will compare `telnet` and `SSH`, two applications used for remote login to a host. 
 
@@ -236,11 +238,7 @@ Transfer both packet captures to your laptop with `scp`, and analyze with Wiresh
 </div>  
 <p><br></p>
 
-**Lab report**: In the packet capture of the `telnet` experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. 
-
-**Lab report**: In the packet capture of the SSH experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. 
-
-## File transfer
+### File transfer
 
 In this exercise, we will compare FTP and SFTP, two applications used for file transfer to and from a remote host. SFTP tunnels FTP traffic over an SSH session.
 
@@ -353,12 +351,7 @@ Transfer both packet captures to your laptop with `scp`, and analyze with Wiresh
 </div>  
 <p><br></p>
 
-**Lab report**: In the packet capture of the FTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence. 
-
-**Lab report**: In the packet capture of the SFTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence. 
-
-
-## Web access
+### Web access
 
 In this exercise, we'll compare HTTP and HTTPS (HTTP over SSL/TLS).
 
@@ -530,6 +523,13 @@ Stop the `tcpdump` with Ctrl+C.
 </div>  
 <p><br></p>
 
-**Lab report**: In the packet capture of the HTTP experiment, can you read: the IP and TCP headers? The contents of the HTTP GET (including the name of the page you visited, `form.html`)? The data you entered in the form? Show evidence. 
+## Notes
 
-**Lab report**: In the packet capture of the HTTPS experiment, can you read: the IP and TCP headers? The contents of the HTTP GET (including the name of the page you visited, `form.html`)? The data you entered in the form? Show evidence. 
+<ul>
+<li>In the packet capture of the `telnet` experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. </li>
+<li>In the packet capture of the SSH experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. </li>
+<li>In the packet capture of the FTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence. </li>
+<li>In the packet capture of the SFTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence.</li>
+<li>In the packet capture of the HTTP experiment, can you read: the IP and TCP headers? The contents of the HTTP GET (including the name of the page you visited, `form.html`)? The data you entered in the form? Show evidence.</li>
+<li>In the packet capture of the HTTPS experiment, can you read: the IP and TCP headers? The contents of the HTTP GET (including the name of the page you visited, `form.html`)? The data you entered in the form? Show evidence. </li>
+</ul>
