@@ -521,15 +521,19 @@ Stop the `tcpdump` with Ctrl+C.
 <p>If you are running this experiment on FABRIC, you can use the "Exercise: Transfer .pcap files from a FABRIC host" section of the "setup.ipynb" notebook to transfer the .pcap files from the host to the Jupyter environment, then download them on your laptop. </p>
 
 </div>  
-<p><br></p>
 
 ## Notes
 
 <ul>
 <li>In the packet capture of the `telnet` experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. </li>
+        
 <li>In the packet capture of the SSH experiment, can you read: the username and password? IP/TCP headers? Session data? Show evidence. </li>
+
 <li>In the packet capture of the FTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence. </li>
+
 <li>In the packet capture of the SFTP experiment, can you read: the username and password? IP/TCP headers? The name of the file transferred, and the file contents? Show evidence.</li>
+
 <li>In the packet capture of the HTTP experiment, can you read: the IP and TCP headers? The contents of the HTTP GET (including the name of the page you visited, `form.html`)? The data you entered in the form? Show evidence.</li>
+
 <li>In the packet capture of the HTTPS experiment, can you read: the IP and TCP headers? The contents of the HTTP GET (including the name of the page you visited, `form.html`)? The data you entered in the form? Show evidence. </li>
 </ul>
