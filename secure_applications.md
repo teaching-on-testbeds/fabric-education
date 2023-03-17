@@ -88,6 +88,13 @@ git checkout secure_applications
 
 ### Remote login
 
+To setup all the nodes in this experiment, we need to install net-tools package to access networking utilities such as ifconfig and route commands. On "romeo", "router" and "server" run:
+
+<pre>
+sudo apt update 
+sudo apt -y install net-tools
+</pre>
+
 In this exercise, we will compare `telnet` and `SSH`, two applications used for remote login to a host. 
 
 First, we will need to install and configure these services on the "server" node.
@@ -355,11 +362,9 @@ Transfer both packet captures to your laptop with `scp`, and analyze with Wiresh
 
 In this exercise, we'll compare HTTP and HTTPS (HTTP over SSL/TLS).
 
-To setup this part of the experiment, on the "romeo" node, install net-tools and lynx package to access networking utilities and browse the web from the terminal host session:
+To setup this part of the experiment, on the "romeo" node, install lynx package to browse the web from the terminal host session:
 
 <pre>
-sudo apt update 
-sudo apt -y install net-tools
 sudo apt install lynx
 </pre>
 
