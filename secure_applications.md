@@ -76,7 +76,7 @@ git checkout secure_applications
 
 <p>To reserve these resources on Cloudlab, open this profile page: </p>
 
-<p><a href="https://www.cloudlab.us/p/nyunetworks/education?refspec=refs/heads/tcp_congestion_control">https://www.cloudlab.us/p/nyunetworks/education?refspec=refs/heads/tcp_congestion_control</a></p>
+<p><a href="https://www.cloudlab.us/instantiate.php?project=nyunetworks&profile=education&refspec=refs/heads/secure_applications">https://www.cloudlab.us/instantiate.php?project=nyunetworks&profile=education&refspec=refs/heads/secure_applications</a></p>
 
 <p>Click "next", then select the Cloudlab project that you are part of and a Cloudlab cluster with available resources. (This experiment is compatible with any of the Cloudlab clusters.) Then click "next", and "finish".</p>
 
@@ -355,6 +355,14 @@ Transfer both packet captures to your laptop with `scp`, and analyze with Wiresh
 
 In this exercise, we'll compare HTTP and HTTPS (HTTP over SSL/TLS).
 
+To setup this part of the experiment, on the "romeo" node, install net-tools and lynx package to access networking utilities and browse the web from the terminal host session:
+
+<pre>
+sudo apt update 
+sudo apt -y install net-tools
+sudo apt install lynx
+</pre>
+
 On the "server" node, install the Apache web server:
 
 <pre>
@@ -476,7 +484,6 @@ to capture traffic on the network segment. This packet capture will show you wha
 While this is running, initiate an HTTP session from "romeo" to "server" - on "romeo", run
 
 <pre>
-sudo apt install lynx
 lynx http://server/form.html
 </pre>
 
