@@ -22,7 +22,7 @@ To reproduce this experiment on Cloudlab, you will need an account on <a href="h
 </div>  
 
 <ul>
-<li>Skip to <a href="#runmyexperiment">Run my experiment</a></li>
+<li>Skip to <a href="#run-my-experiment">Run my experiment</a></li>
 </ul>
 
 ## Background
