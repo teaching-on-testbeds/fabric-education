@@ -2,7 +2,7 @@
 
 The exercises in this experiment will focus on the *confidentiality* of network services - to what extent are services that offer remote login, file transfer, or web access, protected from disclosure to unauthorized individuals? In particular, we will consider confidentiality with respect to malicious users who might be eavesdropping on network traffic.
 
-You can run this experiment on GENI or on the new FABRIC testbed! Refer to the testbed-specific prerequisites listed below.
+You can run this experiment on GENI, Cloudlab or on the new FABRIC testbed! Refer to the testbed-specific prerequisites listed below.
 
 <div style="border-color:#FB8C00; border-style:solid; padding: 15px;">  
 <h4 style="color:#FB8C00;"> GENI-specific instructions: Prerequisites</h4>
