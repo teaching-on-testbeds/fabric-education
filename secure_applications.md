@@ -36,23 +36,23 @@ Non-secure applications, on the other hand, are not designed with the same level
 
 ## Results
 
-In remote login exercise, we compare the confidentiality aspect of logging in through SSH and Telnet applications on server node and access these applications on romeo node. For this we need to analyze the traffic captured at romeo to see if an eavesdropper on the network segment can extract any information. 
+In the remote login exercise, we compare the confidentiality aspect of logging in through SSH and Telnet applications on server node and accessing these applications on romeo node. For this, we need to analyze the traffic captured at romeo to see if an eavesdropper on the network segment can extract any information.
 
-First analyze the security-telnet-romeo.pcap file on wireshark. You can do this in many ways:
+First, analyze the security-telnet-romeo.pcap file on Wireshark. You can do this in many ways:
 
-1. Right click on any Telnet packet and go to Follow >> TCP Stream. You'll see the following stream content displayed in the same sequence as it appeared on the network:
+1. Right-click on any Telnet packet and go to Follow >> TCP Stream. You'll see the following stream content displayed in the same sequence as it appeared on the network:
 
 <img src="https://user-images.githubusercontent.com/73753025/226147518-018ca733-f9f0-477d-9c56-56bd47e90c6f.png" alt="telent1">
 
-All the traffic from romeo to server are highlighted in red, whereas traffic from server to romeo are highlighted in blue. You'll notice that the prompts, login username, password and session details such as user ran commands and their outputs, are all visible and anybody eavesdropping on this network segment will also be able to read the information.
+All the traffic from romeo to server is highlighted in red, whereas traffic from server to romeo is highlighted in blue. You'll notice that the prompts, login username, password, and session details such as user ran commands and their outputs, are all visible and anybody eavesdropping on this network segment will also be able to read the information.
 
-2. You can also analyze by selecting the first telent packet and expanding the telnet header in the packet details pane to see the data as you scroll through all the telnet packets captured. On the packet bytes pane, you can see the same data displayed. In this example username shakespeare is displayed:
+2. You can also analyze by selecting the first telnet packet and expanding the telnet header in the packet details pane to see the data as you scroll through all the telnet packets captured. On the packet bytes pane, you can see the same data displayed. In this example username shakespeare is displayed:
 
 <img src="https://user-images.githubusercontent.com/73753025/226150457-f088e15b-5593-4392-a8eb-1aff4e66cc3c.png" alt="telnet2">
 
-Note: In this case you can observe the password entered one character at a time. 
+Here you can observe the password entered one character at a time. 
 
-Besides this you can also see the information about traffic flow such as packet header details in remote telnet login. In the following tcpdump capture, the source and destination IP addresses and their port numbers are all visible for the eavesdropper:
+Besides this, you can also see the information about traffic flow such as packet header details in remote telnet login. In the following tcpdump capture, the source and destination IP addresses and their port numbers are all visible to the eavesdropper:
 
 <pre>
 2023-03-18 20:37:18.511217 IP 10.10.1.100.45742 > 10.10.2.100.23: Flags [P.], seq 86:97, ack 123, win 502, options [nop,nop,TS val 2814424891 ecr 438341242], length 11
@@ -62,6 +62,21 @@ Besides this you can also see the information about traffic flow such as packet 
 </pre>
 
 In remote telnet login, one can clearly identify the type of service running on the server host through the default telnet port number 23.
+
+However, in remote SSH login, on repeating the above analysis for SSH packets you'll notice that the username, password, and session details are all encrypted whereas the source and destination IP addresses and their TCP port numbers are visible.
+
+<img src="https://user-images.githubusercontent.com/73753025/226185617-a12117ce-c215-4acb-9a27-86b1e6e7f8d4.png" alt="ssh1">
+
+<pre>
+2023-03-18 20:38:15.975943 IP 10.10.1.100.33508 > 10.10.2.100.1000: Flags [.], ack 3706, win 501, options [nop,nop,TS val 2814482356 ecr 438414154], length 0
+2023-03-18 20:38:15.975968 IP 10.10.2.100.1000 > 10.10.1.100.33508: Flags [P.], seq 3706:3742, ack 2442, win 501, options [nop,nop,TS val 438414154 ecr 2814482356], length 36
+2023-03-18 20:38:15.975968 IP 10.10.2.100.1000 > 10.10.1.100.33508: Flags [P.], seq 3742:3890, ack 2442, win 501, options [nop,nop,TS val 438414154 ecr 2814482356], length 148
+2023-03-18 20:38:15.975984 IP 10.10.1.100.33508 > 10.10.2.100.1000: Flags [.], ack 3742, win 501, options [nop,nop,TS val 2814482356 ecr 438414154], length 0
+</pre>
+
+Similarly, in the file transfer exercise, through FTP transfer you'll notice that the prompts, login username, password, session details, source, and destination IP addresses, and their TCP port numbers are unencrypted whereas through SFTP transfer only prompts, login username, password, and session details are encrypted.
+
+In the web access exercise, through HTTP one can eavesdrop on the contents of the HTTP GET, session data, source, and destination IP addresses, and their TCP port numbers. However, through secure access such as HTTPS one cannot extract contents of the HTTP GET and session data.
 
 ## Run my experiment
 
