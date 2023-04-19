@@ -165,7 +165,7 @@ Follow the instructions for the testbed you are using (GENI, Cloudlab or FABRIC)
 
 <p>Click on "Site 1" and choose an InstaGENI site to bind to, then reserve your resources. Wait for your nodes to boot up (they will turn green in the canvas display on your slice page in the GENI portal when they are ready). Then, use the details given in the GENI Portal to SSH into each node.</p>
 
-<p>When you have logged in to each node, continue to the <a href="#challengedesignsubnets">Challenge: design subnets</a> section.</p>
+<p>When you have logged in to each node, continue to the <a href="#challenge-design-subnets">Challenge: design subnets</a> section.</p>
 </div>  
 <p><br></p>
 <div style="border-color:#47aae1; border-style:solid; padding: 15px;">  
@@ -182,7 +182,7 @@ git checkout subnets
  
 <p>Follow along inside the notebook to reserve resources and get the login details for each host in the experiment.</p>  
 
-<p>When you have logged in to each node, continue to the <a href="#challengedesignsubnets">Challenge: design subnets</a> section.</p>
+<p>When you have logged in to each node, continue to the <a href="#challenge-design-subnets">Challenge: design subnets</a> section.</p>
 </div>  
 <p><br></p>
 <div style="border-color:#5e8a90; border-style:solid; padding: 15px;">  
@@ -200,7 +200,7 @@ git checkout subnets
 
 <p>Wait until all of the sources have turned green and have a small check mark in the top right corner of the "topology view" tab, indicating that they are fully configured and ready to log in. Then, click on "list view" to get SSH login details for the romeo, router, and server hosts. Use these details to SSH into each.</p>
 
-<p>When you have logged in to each node, continue to the <a href="#challengedesignsubnets">Challenge: design subnets</a> section.</p>
+<p>When you have logged in to each node, continue to the <a href="#challenge-design-subnets">Challenge: design subnets</a> section.</p>
 
 </div>  
 
