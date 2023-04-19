@@ -173,9 +173,9 @@ Follow the instructions for the testbed you are using (GENI, Cloudlab or FABRIC)
 <p>To run this experiment on <a href="https://fabric-testbed.net/">FABRIC</a>, open the JupyterHub environment on FABRIC, open a shell, and run </p>
 
 <pre>
-git clone https://github.com/teaching-on-testbeds/fabric-education designing_subnets
-cd designing_subnets
-git checkout designing_subnets
+git clone https://github.com/teaching-on-testbeds/fabric-education subnets
+cd subnets
+git checkout subnets
 </pre>
 
 <p>Then open the notebook titled "setup.ipynb".</p> 
