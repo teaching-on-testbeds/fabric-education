@@ -1,6 +1,19 @@
 ::: {.cell .markdown}
 
-# Inspecting network traffic with `tcpdump` and Wireshark
+# TCP/IP protocol stack
+
+:::
+
+::: {.cell .markdown}
+
+In this experimental demonstration of the TCP/IP protocol architecture, we will examine network addresses and connections at
+
+* the network access (a.k.a. data link) layer,
+* the Internet (IP) layer,
+* the transport layer (logical host-to-host), and
+* the application layer.
+
+It should take about 60 minutes to run this experiment.
 
 :::
 
@@ -15,3 +28,10 @@ In this notebook you will:
 * Delete your resources when you are finished
 
 :::
+
+::: {.cell .markdown}
+
+To *execute* the experiment, you will follow the instructions at: https://witestlab.poly.edu/blog/tcp-ip-protocol-stack/
+
+:::
+
