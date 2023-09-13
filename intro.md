@@ -1,17 +1,15 @@
 ::: {.cell .markdown}
 
-# TCP/IP protocol stack
+# Address resolution protocol (ARP) 
 
 :::
 
 ::: {.cell .markdown}
 
-In this experimental demonstration of the TCP/IP protocol architecture, we will examine network addresses and connections at
+In this experiment, we will examine how ARP is used in IPv4 networks - 
 
-* the network access (a.k.a. data link) layer,
-* the Internet (IP) layer,
-* the transport layer (logical host-to-host), and
-* the application layer.
+* to resolve IPv4 addresses of neighbors into link layer MAC addresses
+* and to keep track of the neighbor reachability.
 
 It should take about 60 minutes to run this experiment.
 
@@ -31,7 +29,7 @@ In this notebook you will:
 
 ::: {.cell .markdown}
 
-To *execute* the experiment, you will follow the instructions at: https://witestlab.poly.edu/blog/tcp-ip-protocol-stack/
+To *execute* the experiment, you will follow the instructions at: https://witestlab.poly.edu/blog/address-resolution-protocol-arp/ 
 
 :::
 
