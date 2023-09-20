@@ -1,15 +1,12 @@
 ::: {.cell .markdown}
 
-# Address resolution protocol (ARP) 
+# Network layer security 
 
 :::
 
 ::: {.cell .markdown}
 
-In this experiment, we will examine how ARP is used in IPv4 networks - 
-
-* to resolve IPv4 addresses of neighbors into link layer MAC addresses
-* and to keep track of the neighbor reachability.
+The exercises in this experiment will focus on security services offered at the **network layer** of the TCP/IP protocol stack. You will configure a network with a VPN tunnel, and then you will examine the extent to which you are protected from unauthorized eavesdroppers on network traffic, when you use a file transfer application (with and without [application layer confidentiality](https://witestlab.poly.edu/blog/secure-networked-applications/)).
 
 It should take about 60 minutes to run this experiment.
 
@@ -29,7 +26,7 @@ In this notebook you will:
 
 ::: {.cell .markdown}
 
-To *execute* the experiment, you will follow the instructions at: https://witestlab.poly.edu/blog/address-resolution-protocol-arp/ 
+To *execute* the experiment, you will follow the instructions at: https://witestlab.poly.edu/blog/network-layer-security
 
 :::
 
