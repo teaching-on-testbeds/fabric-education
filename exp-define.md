@@ -16,8 +16,8 @@ net_conf = [
  {"name": "net2", "subnet": "10.0.2.0/24", "nodes": [{"name": "juliet",  "addr": "10.0.2.100"}, {"name": "router", "addr": "10.0.2.10"}]}
 ]
 route_conf = [
- {"addr": "10.0.2.0/24", "gw": "10.0.0.10", "nodes": ["romeo"]},
- {"addr": "10.0.1.0/24", "gw": "10.0.1.10", "nodes": ["juliet"]}
+ {"addr": "10.0.2.0/24", "gw": "10.0.1.10", "nodes": ["romeo"]},
+ {"addr": "10.0.1.0/24", "gw": "10.0.2.10", "nodes": ["juliet"]}
 ]
 exp_conf = {'cores': sum([ n['cores'] for n in node_conf]), 'nic': sum([len(n['nodes']) for n in net_conf]) }
 ```
