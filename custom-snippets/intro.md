@@ -1,12 +1,12 @@
 ::: {.cell .markdown}
 
-# Static routing within and between IPv4 networks
+# Designing subnets
 
 :::
 
 ::: {.cell .markdown}
 
-In these exercises, you will observe how routing principles apply when packets are forwarded by a router from one network segment to the next.
+Your task in this experiment is to set up subnets in a few small LANs to meet given design requirements.
 
 :::
 
@@ -19,7 +19,7 @@ In this notebook you will:
 * Configure your reserved resources
 * Access your reserved resources over SSH
 
-Then you will run the experiment at [Static routing within and between IPv4 networks](https://witestlab.poly.edu/blog/static-routing/).
+Then you will run the experiment at [Designing subnets](https://witestlab.poly.edu/blog/designing-subnets/).
 
 Finally, you will
 
@@ -27,9 +27,4 @@ Finally, you will
 
 :::
 
-::: {.cell .markdown}
-
-To *execute* the experiment, you will follow the instructions at: https://witestlab.poly.edu/blog/static-routing/
-
-:::
 
