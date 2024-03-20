@@ -1,5 +1,5 @@
 ::: {.cell .markdown}
-### Define configuration for this experiment (two hosts and router in line topology)
+### Define configuration for this experiment
 :::
 
 ::: {.cell .code}
