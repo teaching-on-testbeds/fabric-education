@@ -33,9 +33,3 @@ git clone -b network_security https://github.com/teaching-on-testbeds/fabric-edu
 ---
 
 This material is based upon work supported by the National Science Foundation under Grant No. 2231984.
-
-
----
-
-This material is based upon work supported by the National Science Foundation under Grant No. 2231984.
-
