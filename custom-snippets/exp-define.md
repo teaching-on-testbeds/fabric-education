@@ -7,12 +7,13 @@
 slice_name="ethernet_bridge_switch-" + fablib.get_bastion_username()
 
 node_conf = [
- {'name': "romeo",   'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], host="eduky-w1.fabric-testbed.net"}, 
- {'name': "juliet",  'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], host="eduky-w1.fabric-testbed.net"}, 
- {'name': "hamlet",  'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], host="eduky-w1.fabric-testbed.net"},
- {'name': "ophelia", 'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], host="eduky-w1.fabric-testbed.net"},
- {'name': "bridge",  'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], host="eduky-w2.fabric-testbed.net"}
+ {'name': "romeo",   'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], 'host': "eduky-w1.fabric-testbed.net"}, 
+ {'name': "juliet",  'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], 'host': "eduky-w1.fabric-testbed.net"}, 
+ {'name': "hamlet",  'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], 'host': "eduky-w1.fabric-testbed.net"},
+ {'name': "ophelia", 'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], 'host': "eduky-w1.fabric-testbed.net"},
+ {'name': "bridge",  'cores': 2, 'ram': 4, 'disk': 10, 'image': 'default_ubuntu_22', 'packages': [], 'host': "eduky-w2.fabric-testbed.net"}
 ]
+
 net_conf = [
  {"name": "net0", "subnet": "10.0.0.0/24", "nodes": [{"name": "romeo",   "addr": "10.0.0.100"}, {"name": "bridge", "addr": "0.0.0.0"}]},
  {"name": "net1", "subnet": "10.0.0.0/24", "nodes": [{"name": "juliet",  "addr": "10.0.0.101"}, {"name": "bridge", "addr": "0.0.0.0"}]},
