@@ -1,6 +1,7 @@
 ::: {.cell .markdown}
 
-# TCP Congestion Control
+# Operation of a basic Ethernet switch or bridge
+
 
 :::
 
@@ -13,10 +14,7 @@ In this notebook you will:
 * Access your reserved resources over SSH
 * Extend your FABRIC reservation (in case you need more time) or delete it (in case you finish early)
 
-And, after using the resources to [execute an experiment related to TCP congestion control](https://witestlab.poly.edu/blog/tcp-congestion-control-basics/):
-
-* Retrieve files saved on a FABRIC resource
-* Visualize the data retrieved
+Then, you will use the resources to [execute an experiment related to an Ethernet switch or bridge](https://witestlab.poly.edu/blog/basic-ethernet-switch-operation/).
 
 **Prerequisites**: This material assumes you have already configured your FABRIC account following the instructions in [Hello, FABRIC](https://teaching-on-testbeds.github.io/hello-fabric/).
 :::
