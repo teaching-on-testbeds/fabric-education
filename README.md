@@ -11,6 +11,7 @@ A typical sequence for computer networks, following Kurose & Ross 8th edition, m
 * [TCP congestion control](https://teaching-on-testbeds.github.io/blog/tcp-congestion-control) (Chapter 3 in K&R)
 * [Static routing](https://teaching-on-testbeds.github.io/blog/static-routing) (Chapter 4 in K&R)
 * [Designing subnets](https://teaching-on-testbeds.github.io/blog/designing-subnets) (Chapter 4 in K&R)
+* [Ethernet switch or bridge](https://teaching-on-testbeds.github.io/blog/learning-switch) (Chapter 6 in K&R)
 * [ARP](https://teaching-on-testbeds.github.io/blog/address-resolution-protocol-arp) (Chapter 6 in K&R)
 * [Secure networked applications](https://teaching-on-testbeds.github.io/blog/secure-applications) (Chapter 8 in K&R)
 * [Network layer security](https://teaching-on-testbeds.github.io/blog/network-layer-security) (Chapter 8 in K&R)
@@ -25,6 +26,7 @@ git clone https://github.com/teaching-on-testbeds/sockets-python.git sockets_pyt
 git clone -b tcp_congestion_control https://github.com/teaching-on-testbeds/fabric-education tcp_congestion_control
 git clone -b static_routing https://github.com/teaching-on-testbeds/fabric-education static_routing
 git clone -b subnets https://github.com/teaching-on-testbeds/fabric-education subnets
+git clone -b bridge https://github.com/teaching-on-testbeds/fabric-education bridge
 git clone -b arp https://github.com/teaching-on-testbeds/fabric-education arp
 git clone -b secure_applications https://github.com/teaching-on-testbeds/fabric-education secure_applications
 git clone -b network_security https://github.com/teaching-on-testbeds/fabric-education network_security
